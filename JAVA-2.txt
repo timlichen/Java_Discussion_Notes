@@ -1,0 +1,54 @@
+Object Oriented Programming with Java
+
+Stack 2 Algorithms:
+    Warmup - insert at given index and value insert value, remove at index
+    Binary Search - given a sorted array search for a value
+
+What is an object?
+    Consider real world objects ... 
+    What possible attributes can this object have?
+    What possible behavior can this object perform?
+
+    Software objects are conceptually similar to real world objects; they consist of a state and related behavior. An object uses fields to store its state and its methods as the primary mechanism for object-object communication. 
+
+    Circle Diagram - inner circle fields, outer circle segments methods
+
+    What are some advantages of bundling Java code into objects:
+        Modularity - source code objects can be written and maintained independently. Once created, an object can be easily passed around inside of the system.
+
+        Information hiding - Methods provide a layer of protection from fields that hold information, thus protecting and hiding from the outside world (i.e. other code).
+
+        Code re-use - You can use other people's objects and they can use yours.
+
+        Plugability and debugging ease - if an object starts to break your code,you can remove it and plug in another object. Similar to mechanical objects, if a bolt breaks you can replace the bolt rather than the entire machine.
+
+Understanding Member Variables (fields, methods, nested classes) 
+    Fields are attributes
+    Methods define behavior of the object
+    
+    Nested classes are classes written within another class, static
+    Non static nested classes are called inner classes
+    
+    For right now, just know that this is possible so when you come across a situtaion where logically grouping classes so that are only used in one place you'll know it possible. You cannot write sibling classes in one file.
+
+Understanding Constructors 
+    Definition: Constructors are special methods that are run when an object is instantiated. Constructor declarations look like method declarations—except that they must have the same name of the class and have no return type
+
+    class Hamburger{
+        public Hamburger(int _patties, String[] _toppings){
+            patties = _patties;
+            toppings = _toppings
+        }
+    }
+    
+Understanding Method Overloading and Signatures - 
+    
+    Definition: Two of the components of a method declaration comprise the method signature—the method's name and the parameter types. See the example in the course platform.
+
+Encapsulation - wrapping data in a class that encapsulates the information relevant to that class.
+
+Inheritance - How classes acquire the methods and fields of another class. Java is designed to not include multiple inheritance, class C cannot inherit from class B and A, it can only have one "superclass". Every object unless specified will implicitly inherit from the Object class. When you inherit, you bring in the fields and methods of the parent class. Java prevents name collisions and problem that arise from conflicting fields and method by only allowing single inheritance. 
+
+A -> B -> C - C will have all the fields/methods included in A and B 
+
+

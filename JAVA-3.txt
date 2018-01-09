@@ -1,0 +1,7 @@
+-- DAY 3 
+
+Polymorphism & Abstraction
+
+Interfaces act as a contract between two classes, each class that interfaces with the interface should be able to write their code without any knowledge of how the other group's code is written. 
+
+Consider this, Noelle is working on a software project, she want to let me help out, but while I work on something she wants to work on other parts of her project. She writes and interface that defines the method signature and tell me that my Java class has to use this interface. She doesn't really care how I write my code, but it's gotta work and it's got to fit the standards of her software.

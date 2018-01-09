@@ -1,0 +1,33 @@
+# Day 1
+
+Day 1: 
+
+Topics to cover:
+
+    Java is an staticly typed, OOP lanauge that is compiled and then interpreted. Java was designed with the mentality of being able to "Write Once, Run Anywhere". This is possible through the implementation of JVM's for specific OS's. OSX, Linux, Windows. However, since the code for the VM/OS differs for each host additional testing is needed for each target system, slogan is more like, "Write Once, Debug Everywhere".
+
+    Life Cycle of a Java Program - All java programs follow this life cycle.
+
+    Java Life Cycle:
+
+        The code is written, it's then compiled, once it's compiled and all dependencies are imported, the resulting bytecode is then run through the interpreter in the Java Virtual Machine which is hosted on an operating system.
+
+        java - interpreter
+        javac - compiler
+        jar - archiver
+        jvm - java virtual machine
+
+    What is static? -  A method that can be run without out an object. Ask yourslf does the purpose of the method require and object to make sense, e.g. convert mpgToKpg vs. defineTheMileage of a car.
+
+    What is void? - Specifying the return type, void means don't return anything.
+
+    What is the main entry point for a java program?  - Public Static void main(String[] arg) is the method called when a Java application beings, not every java class needs to have it, but when you test and run your java program you will need to create this method inorder for you to actually "run" the program.
+
+    HelloWorld.java -> HelloWorldTest.java
+
+    Make note of the difference between Class data types and primitive non-class data types.
+
+    Reading the Java Docs
+    How to use import and for loops.
+
+    

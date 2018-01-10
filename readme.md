@@ -30,6 +30,7 @@ How to use import and for loops.
 ### Object Oriented Programming with Java
 
 **Stack 2 Algorithms**:
+
 Warmup - insert at given index and value insert value, remove at index
 
 Binary Search - given a sorted array search for a value
@@ -87,17 +88,46 @@ B -> C <- A, C cannot directly inherit from B and A.
 
 # DAY 3 
 
+**Stack 2 Algorithms**:
+Warmup - Second-Largest, Remove Negatives
+
+Smarter Sum & Faster Factorial - Time-Space trade-off, using this tradeoff write a Sigma and Factorial class that to accelerate the average time it would take to reach a solution.
+
 ### Interfaces, Polymorphism & Abstraction
 
 **Polymorphism** - Subclasses of a class can define their own unique behaviors and yet share some of the same functionality of the parent class. An instance of a class or object can behave or function as if it were a different class or type of object, but have it’s own specific attributes and methods. Along with overloading methods, another form of polymorphism is overriding methods. https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html
 
 **Abstraction** - The process of hiding the implementation details and showing only the functionality. Java provides Abstract classes and Interfaces as an implementation of Abstraction. When should you use an interface and when should you use an abstract? An interface should be used when you want to provide classes with specific methods to implement, classes can implement multiple interfaces but they don’t have to share a similar class hierarchy. An abstract class provides a base providing a model from which a subclass should follow. It will be the one and only superclass, but can provide a base that allows for abstract methods to be implemented in various ways while providing some methods predefined in the abstract class.
 
-**Interfaces** are pretty important in the world of Java and they go pretty deep, we won't need to know everything an interface can do but there are a few core principlies and design patterns you should know.  Interfaces act as a contract between two classes, each class that interfaces with the interface should be able to write their code without any knowledge of how the other group's code is written.
+**Interfaces** are pretty important in the world of Java that goes pretty deep, we won't need to know everything about an interfaces, but there are a few core principlies and design patterns you should know.  Interfaces act as a contract between two classes, each class that interfaces with the interface should be able to write their code without any knowledge of how the other group's code is written.
 
 Consider this, Noelle is working on a software project, she want to let me help out, but while I work on something she wants to work on other parts of her project. She writes and interface that defines the method signature and tell me that my Java class has to use this interface. She doesn't really care how I write my code, but it's gotta work and it's got to fit the standards of her software.
 
-Interfaces are also a way to gain some of the advantages of multiple inheritence of Classes in Java without some of the concerns that come with direct multiple inheritence since interfaces cannot be instantiated. Class can implement more than once interface. The way they avoid the disadvantages of multiple inheritence is by making interfaces have no state and no implementation i.e. they cannot be instantiated.
+**You don't need to know all the details of the class the object you are working with**, if you know it implements an interface you can use those methods.
+
+Consider this, in the software project I'm building I've create 2 classes, Vehicle Class and Driver class, while these classes seem somewhat similar their relationship doesn't make sense for one to be the superclass, subclass. However chances are there are going to be methods that would make sense to be present in both classes, for example a ```GetInfo``` method that reports on the state of attributes of the class implementation. An interface would be a great way to ensure that both classes implement thier own version of the ```GetInfo``` method. 
+
+Interfaces can also be used to determine the type of the class that it implements.
+
+```Java
+public Class A implements interface A, B{
+
+}
+
+public Class B implements interface A, B{
+
+}
+
+B b = new B();
+A a = new A();
+
+b = a;
+
+``` 
+
+Classes can implement more than once interface. The way they avoid the disadvantages of multiple inheritence is by making interfaces have no state and no implementation i.e. they cannot be instantiated.
+
+Interfaces are a form of polymorphism, they are a way to gain some of the advantages of multiple inheritence of Classes in Java without some of the concerns that come with direct multiple inheritence since interfaces cannot be instantiated.
 
 https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html
 
